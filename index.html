@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<title>
+    Weather app
+</title>
+
+<head>
+    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 ">
+</head>
+
+<body>
+    <form id="search-form">
+        <input type="search" placeholder="Enter the city" id="search-input" required autocomplete="off">
+        <div>
+            <button id="search-button">search</button>
+        </div>
+    </form>
+
+    <main id="app-container">
+        <div id="location">
+            <p>-----------</p>
+        </div>
+        <div class="dateAndTime">
+            <p id="date-time">Jul 29, 10:00 am</p>
+        </div>
+        <div>
+            <div id="temp">
+                <img id="temp-icon" src="./icons/snowflake.png" alt="error">
+                <p><span id="temp-value">-------</span> <span id="temp-unit">&#176c</span></p>
+            </div>
+
+            <div class="humidity-windspeed">
+                <span id="humidity">Humidity: ----</span><span id="wind">wind: ----</span>
+            </div>
+
+            <div id="climate">
+                <p>----------------</p>
+            </div>
+        </div>
+
+        <!-- These are elements for next 7day forecast -->
+
+        <!-- <div class="day-weather">
+            <div class="day">
+                <span id="day1-weather-value">---</span><span class="day-weather-unit">&#176c</span>
+                <p id="day1">Mon</p>
+            </div>
+            
+            <div class="day">
+                <span id="day2-weather-value">---</span><span class="day-weather-unit">&#176c</span>
+                <p id="day2">Tues</p>
+            </div>
+
+            <div class="day">
+                <span id="day3-weather-value">---</span><span class="day-weather-unit">&#176c</span>
+                <p id="day3">Wed</p>
+            </div>
+
+            <div class="day">
+                <span id="day4-weather-value">---</span><span class="day-weather-unit">&#176c</span>
+                <p id="day4">Thur</p>
+            </div>
+
+            <div class="day">
+                <span id="day5-weather-value">---</span><span class="day-weather-unit">&#176c</span>
+                <p id="day5">Fri</p>
+            </div>
+            
+            <div class="day">
+                <span id="day6-weather-value">---</span><span class="day-weather-unit">&#176c</span>
+                <p id="day6">Sat</p>
+            </div>
+          
+            <div class="day">
+                <span id="day7-weather-value">---</span><span class="day-weather-unit">&#176c</span>
+                <p id="day7">Sun</p>
+            </div>
+
+        </div> -->
+
+    </main>
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
